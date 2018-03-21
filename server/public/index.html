@@ -8,7 +8,12 @@
     <script src="scripts/client.js"></script>
     <link rel="stylesheet" href="styles/styles.css">
 </head>
-<body>
+<body ng-app = "myApp">
     <h1>Solo Angular Magic</h1>
+    <div ng-controller="divController as vm">
+    <input type="text" ng-model="userInput">
+    {{userInput}}
+    {{vm.saying}}
+    </div>
 </body>
 </html>
